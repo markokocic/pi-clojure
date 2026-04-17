@@ -5,24 +5,21 @@ import { Type } from "@sinclair/typebox";
 import { defineTool, type ExtensionAPI } from "@mariozechner/pi-coding-agent";
 import { indentMode } from "parinfer";
 
-// Pattern to detect if code likely has delimiter errors
-// This is a simple heuristic - unmatched parens at the end
 function detectImbalance(code: string): boolean {
   let depth = 0;
   let inString = false;
-  let stringChar = "";
   let inChar = false;
 
   for (let i = 0; i < code.length; i++) {
     const ch = code[i];
 
-    // Handle escape
+    // Handle escape sequences in strings
     if ((inString || inChar) && ch === "\\" && i + 1 < code.length) {
       i++;
       continue;
     }
 
-    // Toggle strings
+    // Toggle string/char state
     if (ch === '"' && !inChar) {
       inString = !inString;
       continue;
@@ -32,7 +29,6 @@ function detectImbalance(code: string): boolean {
       continue;
     }
 
-    // Skip contents of strings
     if (inString || inChar) continue;
 
     // Skip comments
@@ -45,15 +41,15 @@ function detectImbalance(code: string): boolean {
     if (ch === "(" || ch === "[" || ch === "{") depth++;
     if (ch === ")" || ch === "]" || ch === "}") depth--;
 
-    // Early exit if we find a clear imbalance
     if (depth < 0) return true;
   }
 
   return depth !== 0;
 }
 
-export function fixDelimiters(code: string): string {
-  return indentMode(code, { forceBalance: true }).text ?? code;
+function fixDelimiters(code: string): string {
+  const result = indentMode(code, { forceBalance: true });
+  return result.text ?? code;
 }
 
 export const parenRepairTool = defineTool({

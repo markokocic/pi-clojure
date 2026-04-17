@@ -28,22 +28,21 @@ export const evalTool = defineTool({
         ns: params.ns != null ? String(params.ns) : undefined,
       });
 
-      const parts: string[] = [];
+      const lines: string[] = [];
 
       if (result.vals.length > 0) {
-        parts.push(`=> ${result.vals.join("\n=> ")}`);
+        lines.push(`=> ${result.vals.join("\n=> ")}`);
       }
 
       if (result.out) {
-        parts.push(`stdout: ${result.out}`);
+        lines.push(`stdout: ${result.out}`);
       }
 
       if (result.err) {
-        parts.push(`stderr: ${result.err}`);
+        lines.push(`stderr: ${result.err}`);
       }
 
-      const text =
-        parts.length > 0 ? parts.join("\n") : "No output (nil or empty)";
+      const text = lines.length > 0 ? lines.join("\n") : "No output (nil or empty)";
 
       return {
         content: [{ type: "text", text }],

@@ -27,6 +27,7 @@ pi install npm:pi-clojure
 | Tool | Description |
 |------|-------------|
 | `clojure_eval` | Evaluates Clojure code via nREPL |
+| `clojure_find_nrepl_port` | Finds nREPL port by checking port files or trying default ports |
 | `clojure_paren_repair` | Fixes unbalanced delimiters in Clojure/ClojureScript/Babashka code. Standalone — no nREPL required. |
 
 ### clojure_eval
@@ -65,6 +66,32 @@ clj -M:nrepl
 ```
 
 Then use the `clojure_eval` tool in pi-coding-agent to evaluate code.
+
+### clojure_find_nrepl_port
+
+Finds the nREPL port by checking for port files in the current directory or trying common default ports. Validates the connection by evaluating `(+ 1 1)`.
+
+#### Features
+
+- Checks for common nREPL port files:
+  - `.nrepl-port`
+  - `nrepl-port`
+  - `.shadow-cljs/nrepl.port`
+  - `.cider-nrepl.port`
+- Falls back to default ports: 7888, 1666, 50505, 58885, 63333, 7889
+- Validates by connecting and evaluating `(+ 1 1)`
+
+#### Parameters
+
+None.
+
+#### Usage
+
+```clojure
+;; Find the nREPL port
+(clojure_find_nrepl_port {})
+;; Returns: Found nREPL port 7888 at localhost:7888
+```
 
 ### clojure_paren_repair
 
