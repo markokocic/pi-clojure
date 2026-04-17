@@ -1,0 +1,21 @@
+{
+  "name": "pi-clojure",
+  "version": "1.0.0",
+  "license": "EPL-2.0",
+  "copyright": "Copyright © 2026-present Marko Kocic <marko@euptera.com>",
+  "author": "Marko Kocic <marko@euptera.com>",
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "keywords": [
+    "pi",
+    "pi-package",
+    "pi-coding-agent",
+    "clojure",
+    "extension",
+    "tools"
+  ],
+  "dependencies": {
+    "bencode": "^4.0.0"
+  }
+}

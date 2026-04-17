@@ -1,0 +1,121 @@
+Eclipse Public License - v 2.0
+
+    THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE
+    PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION
+    OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
+
+1. DEFINITIONS
+
+"Contribution" means:
+  a) in the case of the initial Contributor, the contributions(s) published
+     in the main branch of this repository; and
+  b) in the case of each subsequent Contributor: changes to the repository,
+     and/or additions to the program.
+
+"Contributor" means Lake Washington Tech LLC and any individual or legal entity
+on behalf of whom a contribution has been received by the initial Contributor
+and subsequently incorporated within the work.
+
+"License" means this document.
+
+"Licensed Patents" mean patent claims licensable by a Contributor which are
+necessarily infringed by the use or sale of its Contribution alone or when
+combined with the Program.
+
+"Program" means the contributions which are made available under this License.
+
+"Recipient" means anyone who receives the Program under this License, and all
+subsequent successors and assigns of Recipient, without any other obligations.
+
+2. GRANT OF RIGHTS
+  a) Subject to the terms of this Agreement, each Contributor hereby grants
+     Recipient a non-exclusive, worldwide, royalty-free copyright license to
+     reproduce, prepare derivative works of, publicly display, publicly
+     perform, distribute and sublicense the Contribution of such Contributor,
+     if any, in source code and object code form.
+  b) Subject to the terms of this Agreement, each Contributor hereby grants
+     Recipient a non-exclusive, worldwide, royalty-free patent license under
+     Licensed Patents to make, use, sell, offer for sale, have made, and/or
+     otherwise dispose of: its Contribution, alone or when combined with the
+     Program.
+
+3. LIMITATION OF LIABILITY
+
+UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING
+NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL ANY CONTRIBUTOR BE LIABLE TO ANY
+RECIPIENT OR OTHER PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR
+CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES
+FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY
+AND ALL OTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PERSON SHALL HAVE
+BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF
+LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING
+FROM A CONTRIBUTOR'S NEGLIGENCE TO THE EXTENT APPLICABLE LAW PROHIBITS SUCH
+LIMITATION. FURTHERMORE, SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR
+LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS EXCEPTION MAY NOT
+APPLY TO RECIPIENT.
+
+4. COMMERCIAL LICENSE RESTRICTIONS
+
+Use of this Program by a commercial organization to develop, host, or otherwise
+provide commercial products or services is subject to the additional terms found
+at: https://www.eclipse.org/legal/epl-2.0/tou.php
+
+5. SUBMISSION OF CONTRIBUTIONS
+
+Unless a Contributor explicitly and expressly removes this section in writing,
+any Contribution submitted to the initial Contributor for inclusion in the
+Program shall be under the terms and conditions of this License without any
+additional terms or conditions.
+
+6. TRADEMARKS
+
+This License does not grant permission to use the trade names, trademarks,
+service marks, or product names of the initial Contributor, except as required
+for reasonable and customary use in describing the origin of the Program.
+
+7. DISCLAIMER OF WARRANTY
+
+THE PROGRAM IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY
+WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY, OR
+FITNESS FOR A PARTICULAR PURPOSE. EACH RECIPIENT IS SOLELY RESPONSIBLE FOR
+DETERMINING THE APPROPRIATENESS OF USING AND DISTRIBUTING THE PROGRAM AND
+ASSUMES ALL RISKS ASSOCIATED WITH ITS EXERCISE OF RIGHTS UNDER THIS
+AGREEMENT, INCLUDING BUT NOT LIMITED TO THE RISKS AND COSTS OF PROGRAM
+ERRORS, COMPLIANCE WITH APPLICABLE LAWS, DAMAGE TO OR LOSS OF DATA,
+PROGRAMS OR EQUIPMENT, AND UNAVAILABILITY OR UNINTERRUPTION OF OPERATIONS.
+
+8. DISCLAIMER OF LIABILITY
+
+EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER THE INITIAL
+CONTRIBUTOR NOR ANY OTHER CONTRIBUTOR SHALL, IN EACH INSTANCE, BE LIABLE TO
+ANY RECIPIENT OR OTHER PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL,
+OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION,
+DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES, EVEN IF SUCH PERSON
+SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES. THIS
+LIMITATION OF LIABILITY SHALL NOT APPLY TO LIABILITY FOR DEATH OR PERSONAL
+INJURY RESULTING FROM A CONTRIBUTOR'S NEGLIGENCE TO THE EXTENT APPLICABLE
+LAW PROHIBITS SUCH LIMITATION. FURTHERMORE, SOME JURISDICTIONS DO NOT ALLOW
+THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS
+EXCEPTION MAY NOT APPLY TO RECIPIENT.
+
+9. MULTIPLE LICENSING
+
+This License applies to the initial contributions and subsequent contributions
+only. Some files within this Program may be licensed under different terms.
+Any terms added to individual files will be specified in those files.
+
+10. TERMINATION
+
+This License is effective until terminated by Recipient at its option. Upon
+termination, all rights and obligations under this License will cease, except
+for any rights expressly granted in writing by the Contributor.
+
+11. JURISDICTION AND GOVERNING LAW
+
+This License shall be governed by the laws of the State of Washington, USA,
+excluding its conflict-of-law provisions. Any litigation relating to this
+License shall be subject to the jurisdiction of the Federal Courts of the
+Western District of Washington (Seattle) or the state courts of King County,
+Washington.
