@@ -141,13 +141,6 @@ Works with all Clojure-type source files: .clj, .cljs, .cljc, .bb
 | `((foo [bar] [baz]` | `((foo [bar] [baz]))` |
 | `(defn foo [x y] x)` | `(defn foo [x y] x)` (no change) |
 
-#### Limitations
-
-- Does not handle `#_` (skip comment) constructs correctly
-- Does not handle `#?` (reader conditionals) correctly
-
-These are rarely used in generated code and can be manually corrected if needed.
-
 ## License
 
 EPL-2.0
