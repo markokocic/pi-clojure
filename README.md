@@ -27,6 +27,7 @@ pi install npm:pi-clojure
 | Tool | Description |
 |------|-------------|
 | `clojure_eval` | Evaluates Clojure code via nREPL |
+| `clojure_paren_repair` | Fixes unbalanced delimiters in Clojure/ClojureScript/Babashka code. Standalone — no nREPL required. |
 
 ### clojure_eval
 
@@ -64,6 +65,55 @@ clj -M:nrepl
 ```
 
 Then use the `clojure_eval` tool in pi-coding-agent to evaluate code.
+
+### clojure_paren_repair
+
+Fixes unbalanced delimiters in Clojure, ClojureScript, and Babashka code using [parinfer](https://www.npmjs.com/package/parinfer). **Standalone tool — does not require nREPL or any running process.**
+
+#### Features
+
+- Works with Clojure, ClojureScript, and Babashka
+- Detects unbalanced `(`, `[`, `{`, `)`, `]`, `}`
+- Auto-inserts missing closing delimiters
+- Handles strings, comments, and escape sequences
+- Pure JavaScript implementation (no native deps)
+
+#### Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `code` | string | Clojure code with potentially unbalanced delimiters |
+| `check` | boolean | (optional) Only check if balanced, don't fix |
+
+#### Usage
+
+```clojure
+;; Fix unbalanced delimiters
+(clojure_paren_repair { code: "(defn foo [x]" })
+;; Returns: Fixed delimiters:
+;; ```clojure
+;; (defn foo [x])
+;; ```
+
+;; Check if balanced (without fixing)
+(clojure_paren_repair { code: "(defn foo [x])", check: true })
+;; Returns: Code has balanced delimiters
+```
+
+#### Examples
+
+| Input | Output |
+|-------|--------|
+| `(defn foo [x]` | `(defn foo [x])` |
+| `((foo [bar] [baz]` | `((foo [bar] [baz]))` |
+| `(defn foo [x y] x)` | `(defn foo [x y] x)` (no change) |
+
+#### Limitations
+
+- Does not handle `#_` (skip comment) constructs correctly
+- Does not handle `#?` (reader conditionals) correctly
+
+These are rarely used in generated code and can be manually corrected if needed.
 
 ## License
 

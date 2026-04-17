@@ -19,13 +19,13 @@ export const evalTool = defineTool({
     ns: Type.Optional(Type.String({ description: "Target namespace" })),
   }),
 
-  async execute(_toolCallId, params, signal, _onUpdate, _ctx) {
+  async execute(_toolCallId, params, _signal, _onUpdate, _ctx) {
     try {
       const result = await evalExpr({
-        host: params.host ?? "localhost",
-        port: params.port,
-        code: params.code,
-        ns: params.ns,
+        host: String(params.host ?? "localhost"),
+        port: Number(params.port),
+        code: String(params.code),
+        ns: params.ns != null ? String(params.ns) : undefined,
       });
 
       const parts: string[] = [];
@@ -47,7 +47,7 @@ export const evalTool = defineTool({
 
       return {
         content: [{ type: "text", text }],
-        details: result,
+        details: { vals: result.vals, out: result.out, err: result.err },
       };
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);

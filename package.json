@@ -5,7 +5,9 @@
   "copyright": "Copyright © 2026-present Marko Kocic <marko@euptera.com>",
   "author": "Marko Kocic <marko@euptera.com>",
   "pi": {
-    "extensions": ["./src/index.ts"]
+    "extensions": [
+      "./src/index.ts"
+    ]
   },
   "keywords": [
     "pi",
@@ -16,6 +18,11 @@
     "tools"
   ],
   "dependencies": {
-    "bencode": "^4.0.0"
+    "bencode": "^4.0.0",
+    "parinfer": "^3.13.1"
+  },
+  "devDependencies": {
+    "@sinclair/typebox": "^0.34.49",
+    "@types/node": "^25.6.0"
   }
 }

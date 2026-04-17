@@ -135,7 +135,7 @@ export async function evalExpr(opts: EvalOptions): Promise<EvalResult> {
 
           // Handle clone response
           if (msg.id === cloneId && msg["new-session"]) {
-            session = msg["new-session"] as string;
+            session = String(msg["new-session"]);
             if (ns) {
               evalId = nextId();
               socket.write(await encodeMessage({ op: "ns", ns, session, id: evalId }));
