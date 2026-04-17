@@ -52,7 +52,7 @@ export const findNreplPortTool = defineTool({
   name: "clojure_find_nrepl_port",
   label: "Clojure Find nREPL Port",
   description:
-    "Find nREPL port by checking port files in current directory or trying default ports. Validates by evaluating (+ 1 1).",
+    "Helper to find nREPL port. Checks for port files in current directory or tries default ports. Validates by evaluating (+ 1 1). Used as a helper to find the port for clojure_eval to connect to.",
   promptSnippet: "Find nREPL port in current directory",
   parameters: Type.Object({}),
 

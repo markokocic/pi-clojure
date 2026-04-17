@@ -8,7 +8,7 @@ import { evalExpr } from "../nrepl-client";
 export const evalTool = defineTool({
   name: "clojure_eval",
   label: "Clojure Eval",
-  description: "Evaluate Clojure code via nREPL",
+  description: "Evaluate Clojure code via nREPL. Requires an existing nREPL connection (see clojure_find_nrepl_port to find one).",
   promptSnippet: "Evaluate Clojure code",
   parameters: Type.Object({
     code: Type.String({ description: "Clojure code to evaluate" }),

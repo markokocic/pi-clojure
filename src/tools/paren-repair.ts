@@ -55,7 +55,7 @@ function fixDelimiters(code: string): string {
 export const parenRepairTool = defineTool({
   name: "clojure_paren_repair",
   label: "Clojure Paren Repair",
-  description: "Fix unbalanced delimiters in Clojure code using parinfer. Standalone tool — works with Clojure, ClojureScript, and Babashka. Does not require nREPL.",
+  description: "Fix unbalanced delimiters in Clojure, ClojureScript, and Babashka code using parinfer. Works with all Clojure-type source files (.clj, .cljs, .cljc, .bb). Standalone tool — does not require nREPL or any running process.",
   promptSnippet: "Fix unbalanced delimiters in Clojure code",
   parameters: Type.Object({
     code: Type.String({ description: "Clojure code with potentially unbalanced delimiters" }),

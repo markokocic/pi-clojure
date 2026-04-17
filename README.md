@@ -34,6 +34,10 @@ pi install npm:pi-clojure
 
 Evaluates Clojure code via nREPL.
 
+
+**Note:** Requires an existing nREPL connection. Use `clojure_find_nrepl_port` to find a running nREPL, or start one manually.
+
+
 #### Features
 
 - Evaluates Clojure code via nREPL protocol
@@ -96,6 +100,8 @@ None.
 ### clojure_paren_repair
 
 Fixes unbalanced delimiters in Clojure, ClojureScript, and Babashka code using [parinfer](https://www.npmjs.com/package/parinfer). **Standalone tool — does not require nREPL or any running process.**
+
+Works with all Clojure-type source files: .clj, .cljs, .cljc, .bb
 
 #### Features
 
