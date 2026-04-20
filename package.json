@@ -12,11 +12,15 @@
   "keywords": [
     "pi-package",
     "clojure",
-    "pi", "pi-coding-agent",
-    "pi-extension", "extension",
-    "pi-tool","tools"
+    "pi",
+    "pi-coding-agent",
+    "pi-extension",
+    "extension",
+    "pi-tool",
+    "tools"
   ],
   "dependencies": {
+    "@mariozechner/pi-tui": "^0.67.68",
     "bencode": "^4.0.0",
     "parinfer": "^3.13.1"
   },
