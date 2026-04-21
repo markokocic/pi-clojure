@@ -6,7 +6,7 @@
   "author": "Marko Kocic <marko@euptera.com>",
   "pi": {
     "extensions": [
-      "./src/index.ts"
+      "./extensions/index.ts"
     ]
   },
   "keywords": [
