@@ -41,7 +41,6 @@ Evaluates Clojure code via nREPL.
 #### Features
 
 - Evaluates Clojure code via nREPL protocol
-- Discovers nREPL endpoints on common ports
 - Supports custom namespaces
 - Handles stdout/stderr output
 
@@ -109,7 +108,7 @@ Works with all Clojure-type source files: .clj, .cljs, .cljc, .bb
 - Detects unbalanced `(`, `[`, `{`, `)`, `]`, `}`
 - Auto-inserts missing closing delimiters
 - Handles strings, comments, and escape sequences
-- Pure JavaScript implementation (no native deps)
+- Built on [parinfer](https://www.npmjs.com/package/parinfer) (pure JS, no native dependencies)
 
 #### Parameters
 
