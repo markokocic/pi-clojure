@@ -2,7 +2,7 @@
 // Copyright © 2026-present Marko Kocic <marko@euptera.com>
 
 import { Type } from "@sinclair/typebox";
-import { defineTool, type ExtensionAPI } from "@mariozechner/pi-coding-agent";
+import { defineTool, type ExtensionAPI } from "@earendil-works/pi-coding-agent";
 import { indentMode } from "parinfer";
 
 function detectImbalance(code: string): boolean {

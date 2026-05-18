@@ -1,6 +1,6 @@
 {
   "name": "pi-clojure",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "license": "EPL-2.0",
   "copyright": "Copyright © 2026-present Marko Kocic <marko@euptera.com>",
   "author": "Marko Kocic <marko@euptera.com>",
@@ -20,12 +20,15 @@
     "tools"
   ],
   "dependencies": {
-    "@mariozechner/pi-tui": "^0.67.68",
     "bencode": "^4.0.0",
     "parinfer": "^3.13.1"
   },
   "devDependencies": {
     "@sinclair/typebox": "^0.34.49",
     "@types/node": "^25.6.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.75.1",
+    "@earendil-works/pi-tui": "^0.75.1"
   }
 }

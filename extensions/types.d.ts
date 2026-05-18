@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: EPL-2.0
 
-declare module "@mariozechner/pi-coding-agent" {
+declare module "@earendil-works/pi-coding-agent" {
   export type UnknownPrimitive = string | number | boolean | null | undefined;
   export type JsonValue = UnknownPrimitive | JsonValue[] | { [key: string]: JsonValue };
 

@@ -2,8 +2,8 @@
 // Copyright © 2026-present Marko Kocic <marko@euptera.com>
 
 import { Type } from "@sinclair/typebox";
-import { Text } from "@mariozechner/pi-tui";
-import { defineTool, type ExtensionAPI } from "@mariozechner/pi-coding-agent";
+import { Text } from "@earendil-works/pi-tui";
+import { defineTool, type ExtensionAPI } from "@earendil-works/pi-coding-agent";
 import { evalExpr } from "../nrepl-client";
 
 export const evalTool = defineTool({
